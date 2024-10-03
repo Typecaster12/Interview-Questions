@@ -1,2 +1,10 @@
-//function to find how many times a value occurs in the array;
-//[1,2,3,1] => 1 = 2times;
+//factorial of number using recursion;
+const factorial = (num) => {
+    if (num === 0 || num === 1) {
+        return 1;
+    } else {
+        return num * factorial(num - 1);
+    }
+}
+
+console.log(factorial(3));
